@@ -8,8 +8,8 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 ?>
 <header class="header">
     <div class="header__container">
-        <a href="https://www.rewe-digital.com" target="_blank" rel="noreferrer noopener" title="REWE Digital GmbH">
-            <img src="assets/img/logo.png" alt="REWE Digital GmbH" class="header__logo">
+        <a href="" target="_blank" rel="noreferrer noopener" title="">
+            <img src="" alt="" class="header__logo">
         </a>
         <nav class="nav">
             <ul class="nav__menu">

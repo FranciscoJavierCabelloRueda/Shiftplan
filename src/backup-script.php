@@ -9,31 +9,31 @@ $dbTarget = $_POST['dbTarget'] ?? 'test';
 
 // Define connection details based on selections
 if ($dbSource === 'test') {
-    $dbHostSource = 'hcvm101953.linux.risnet.de';
+    $dbHostSource = 'CHANGE';
     $dbPortSource = '5432';
-    $dbNameSource = 'sbuch_tst';
-    $dbUserSource = 'dbpo_sbuchuser';
-    $dbPasswordSource = 'TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN';
+    $dbNameSource = 'CHANGE';
+    $dbUserSource = 'CHANGE';
+    $dbPasswordSource = 'CHANGE';
 } elseif ($dbSource === 'prod') {
-    $dbHostSource = 'prod_host';
+    $dbHostSource = 'CHANGE';
     $dbPortSource = '5432';
-    $dbNameSource = 'prod_name';
-    $dbUserSource = 'prod_user';
-    $dbPasswordSource = 'prod_pass';
+    $dbNameSource = 'CHANGE';
+    $dbUserSource = 'CHANGE';
+    $dbPasswordSource = 'CHANGE';
 }
 
 if ($dbTarget === 'test') {
-    $dbHostTarget = 'hcvm101953.linux.risnet.de';
+    $dbHostTarget = 'CHANGE';
     $dbPortTarget = '5432';
-    $dbNameTarget = 'sbuch_tst';
-    $dbUserTarget = 'dbpo_sbuchuser';
-    $dbPasswordTarget = 'TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN';
+    $dbNameTarget = 'CHANGE';
+    $dbUserTarget = 'CHANGE';
+    $dbPasswordTarget = 'CHANGE';
 } elseif ($dbTarget === 'dev') {
-    $dbHostTarget = 'hcvm102705.linux.risnet.de';
+    $dbHostTarget = 'CHANGE';
     $dbPortTarget = '5432';
-    $dbNameTarget = 'sbuch_dev';
-    $dbUserTarget = 'dbpo_sbuchuser';
-    $dbPasswordTarget = 'TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN';
+    $dbNameTarget = 'CHENGE';
+    $dbUserTarget = 'CHANGE';
+    $dbPasswordTarget = 'CHANGE';
 }
 
 // Function to send updates to the client

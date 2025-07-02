@@ -2,25 +2,25 @@
 // Define connection details based on the selected environment
 $dbDetails = [
     'prod' => [
-        'host' => 'db-prod',
+        'host' => 'CHANGE',
         'port' => '5432',
-        'user' => 'SBuchuser_dbo',
-        'password' => 'VhhDETgW9gXU',
-        'dbname' => 'SBuchP',
+        'user' => 'CHANGE',
+        'password' => 'CHANGE',
+        'dbname' => 'CHANGE',
     ],
     'test' => [
-        'host' => 'db-test',
+        'host' => 'CHANGE',
         'port' => '5432',
-        'user' => 'dbpo_sbuchuser',
-        'password' => 'TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN',
-        'dbname' => 'sbuch_tst',
+        'user' => 'CHANGE',
+        'password' => 'CHANGE',
+        'dbname' => 'CHANGE',
     ],
     'dev' => [
-        'host' => 'db-dev',
+        'host' => 'CHANGECHANGE',
         'port' => '5432',
-        'user' => 'dbpo_sbuchuser',
-        'password' => 'TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN',
-        'dbname' => 'sbuch_dev',
+        'user' => 'CHANGE',
+        'password' => 'CHANGE',
+        'dbname' => 'CHANGE',
     ],
 ];
 ?>
