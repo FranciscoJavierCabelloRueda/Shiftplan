@@ -1,0 +1,103 @@
+/* Designed by Francisco Javier Cabello Rueda on 19/05/2025 */
+
+:root {
+	--dark-green: rgb(6, 100, 55);
+	--green: rgb(0, 171, 88);
+	--light-yellow: rgb(255, 251, 220);
+}
+
+.header {
+    background: var(--dark-green);
+    height: 8vh;
+    display: flex;
+}
+ 
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+ 
+.header__container {
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    overflow-y: auto;
+    text-transform: uppercase;
+}
+ 
+.header__logo {
+    float: left;
+    height: 50px;
+    padding: 10px 0;
+    user-select: none;
+}
+ 
+.nav {
+    float: right;
+    text-align: center;
+}
+ 
+.nav li:hover {
+    background: var(--green);
+}
+ 
+.nav a {
+    text-decoration: none;
+    color: var(--light-yellow);
+}
+ 
+.nav a:hover {
+    text-decoration: none;
+}
+ 
+.nav li:hover > ul {
+    display: block;
+}
+ 
+.nav__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ 
+.menu__item {
+    float: left;
+    margin-left: 64px;
+    padding: 12px;
+    transition: 0.2s;
+}
+ 
+.no__sub {
+    padding: 13px;
+}
+ 
+.sub__menu {
+    display: none;
+    position: absolute;
+    background: var(--green);
+    border-bottom: 3px solid var(--dark-green);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 6px 0;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: -12px;
+   
+}
+
+.sub__menu li {
+    padding: 10px;
+    color: var(--light-yellow);
+    transition: 0.2s;list-style-type: none; 
+    display: flex;
+    align-items: center; 
+}
+ 
+.sub__menu li:hover {
+    background-color: var(--light-yellow);
+    color: var(--dark-green);
+}

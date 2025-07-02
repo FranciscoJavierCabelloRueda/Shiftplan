@@ -1,0 +1,60 @@
+services:
+  app:
+    build: .
+    container_name: php-app
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8080:80"
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+
+  db-prod:
+    image: postgres:16
+    container_name: db-prod
+    environment:
+      POSTGRES_DB: SBuchP
+      POSTGRES_USER: SBuchuser_dbo
+      POSTGRES_PASSWORD: VhhDETgW9gXU
+    ports:
+      - "5433:5432"
+    networks:
+      - schichtplan-net
+    volumes:
+      - db-prod-data:/var/lib/postgresql/data
+
+  db-test:
+    image: postgres:16
+    container_name: db-test
+    environment:
+      POSTGRES_DB: sbuch_tst
+      POSTGRES_USER: dbpo_sbuchuser
+      POSTGRES_PASSWORD: TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN
+    ports:
+      - "5434:5432"
+    networks:
+      - schichtplan-net
+    volumes:
+      - db-test-data:/var/lib/postgresql/data
+
+  db-dev:
+    image: postgres:16
+    container_name: db-dev
+    environment:
+      POSTGRES_DB: sbuch_dev
+      POSTGRES_USER: dbpo_sbuchuser
+      POSTGRES_PASSWORD: TST!BbLEN7VW744gBoRMxZsHEa4nNd5uo2AweKN
+    ports:
+      - "5435:5432"
+    networks:
+      - schichtplan-net
+    volumes:
+      - db-dev-data:/var/lib/postgresql/data
+
+networks:
+  schichtplan-net:
+
+volumes:
+  db-prod-data:
+  db-test-data:
+  db-dev-data:
