@@ -43,11 +43,11 @@ Developed by **Francisco Javier Cabello Rueda**.
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL License. See the [LICENSE](LICENSE) file for details.
 
 ## 🌐 Available Languages
 
 Check this file in your favourite language:
 
-- 🇪🇸 [Español](README.es.md)
+- 🇪🇸 [Spanish](README.es.md)
 - 🇬🇧 [English](README.md)
